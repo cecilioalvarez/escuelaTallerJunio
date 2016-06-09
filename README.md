@@ -1,2 +1,2 @@
 # escuelaTallerJunio
-Ejemplos de la escuela taller de Junio
+Ejemplos de la escuela taller de Junio.
