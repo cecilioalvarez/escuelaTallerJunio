@@ -12,8 +12,8 @@ describe(" Manejo de sentencias If", function () {
 
   it ("test bucle suma pares", function() {
     var suma=0;
-    for(var i=0;i<=10;i+2){
-      suma=suma+i;
+    for(var i=0;i<=5;i++){
+      suma=suma+(i*2);
     }
     expect(suma).toBe(30);
   });
