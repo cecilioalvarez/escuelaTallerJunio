@@ -24,7 +24,7 @@ describe ("manejo de sentencias if", function(){
     }
     expect(resultado).toBe("bien");
 });
-if ("test if con else nota rango", function(){
+it ("test if con else nota rango", function(){
   var nota=8;
   var resultado="";
   if (nota>=5 && nota<7){
@@ -40,6 +40,6 @@ it ("test if sencillo con clausula OR", function(){
   if (nota<2 || nota>8){
     resultado="eres de los pocos elegidos";
   }
-  expert(resultado).teBe("eres de los pocos elegidos");
+  expect(resultado).toBe("eres de los pocos elegidos");
 });
 });
