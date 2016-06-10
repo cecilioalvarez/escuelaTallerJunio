@@ -52,5 +52,4 @@ describe(" Manejo de sentencias If", function () {
     expect(resultado).toBe("eres de los pocos elegidos");
   });
 
-
 });
