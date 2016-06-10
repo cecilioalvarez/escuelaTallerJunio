@@ -28,7 +28,6 @@ describe("bucle for ", function() {
 
     });
 
-
     it("test bucle while suma 5 primeros pares", function() {
       var suma=0;
       while (suma < 20) {
