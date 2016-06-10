@@ -21,4 +21,17 @@ resultado=resultado+(i*2);
 expect(resultado).toBe(20);
 });
 
+it("test bucle while suma 5 primeros pares", function() {
+  var resultado=0;
+  while (resultado < 20) {
+
+
+resultado=resultado+2;
+
+    }
+
+
+expect(resultado).toBe(20);
+});
+
 });
