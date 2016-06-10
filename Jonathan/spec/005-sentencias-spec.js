@@ -24,16 +24,18 @@ describe("Manejo de Sentencias If", function() {
   it("test if sencillo con rango bien", function() {
   var nota=6;
   var resultado="";
-  if (nota>=5 nota <7) {
+  if (nota>=5 && nota <7) {
     resultado="bien";
 
   expect(resultado).toBe("bien");
-  });
+  }
+});
+
 
   it("test if sencillo con nota rango", function() {
   var nota=8;
   var resultado="";
-  if (nota>=5 nota <7) {
+  if (nota>=5 && nota <7) {
   //  resultado="bien";
   }else {
     resultado="no tienes un bien";
