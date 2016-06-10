@@ -46,5 +46,16 @@ it ("test if con else rango", function() {
   }
 
   expect(resultado).toBe("no tienes un bien");
+
+});
+it ("test if sencillo con clausula OR", function() {
+  var nota=1;
+  var resultado=0;
+  if(nota<=2 ||nota >8) {
+
+    resultado="eres de los pocos elegidos";
+  }
+
+  expect(resultado).toBe("eres de los pocos elegidos");
 })
 });
