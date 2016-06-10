@@ -27,11 +27,19 @@ describe ("manejo de sentencias if", function(){
 if ("test if con else nota rango", function(){
   var nota=8;
   var resultado="";
-  if (nota>=5 && nota<7) {
+  if (nota>=5 && nota<7){
 
-  }else {
+  }else{
     resultado="no tienes un bien";
   }
   expect(resultado).toBe("no tienes un bien");
+});
+it ("test if sencillo con clausula OR", function(){
+  var nota=1;
+  var resultado="";
+  if (nota<2 || nota>8){
+    resultado="eres de los pocos elegidos";
+  }
+  expert(resultado).teBe("eres de los pocos elegidos");
 });
 });
