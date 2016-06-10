@@ -1,0 +1,69 @@
+_______________________________
+                               |
+JAVASCRIPT ATOM/ CARPETA "SPEC |
+______________________________ |
+
+
+
+describe ("Conjunto test", function(){
+  it ("verdadero es igual a verdadero", function() {
+    
+    expect(true).toBe(true);
+  });
+});
+--------------------------------------
+describe ("Conjunto test", function(){
+  it ("verdadero es igual a verdadero", function() {
+
+    var numero1=3;
+    var numero2=3;
+    var suma=numero1+numero2;
+    expect(suma).toBe(5);
+  });
+});
+
+Lo que te sale en el comando
+
+C:\Users\AULA 11\Desktop\escuelaTallerJunio\Lucía Espada>jasmine-node spec
+F
+
+Failures:
+
+  1) Conjunto test verdadero es igual a verdadero
+   Message:
+     ReferenceError: numero2 is not defined
+   Stacktrace:
+     ReferenceError: numero2 is not defined
+    at null.<anonymous> (C:\Users\AULA 11\Desktop\escuelaTallerJunio\Lucía Espada\spec\001-spec.js:6:22)
+
+Finished in 0.015 seconds
+1 test, 1 assertion, 1 failure, 0 skipped
+
+
+
+C:\Users\AULA 11\Desktop\escuelaTallerJunio\Lucía Espada>jasmine-node spec
+F
+
+Failures:
+
+  1) Conjunto test verdadero es igual a verdadero
+   Message:
+     Expected 6 to be 5.
+   Stacktrace:
+     Error: Expected 6 to be 5.
+    at null.<anonymous> (C:\Users\AULA 11\Desktop\escuelaTallerJunio\Lucía Espada\spec\001-spec.js:7:18)
+
+Finished in 0.031 seconds
+1 test, 1 assertion, 1 failure, 0 skipped
+
+
+
+C:\Users\AULA 11\Desktop\escuelaTallerJunio\Lucía Espada>jasmine-node spec
+.
+
+Finished in 0 seconds
+1 test, 1 assertion, 0 failures, 0 skipped
+
+
+
+C:\Users\AULA 11\Desktop\escuelaTallerJunio\Lucía Espada>
