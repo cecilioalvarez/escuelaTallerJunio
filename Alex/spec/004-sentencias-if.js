@@ -27,7 +27,7 @@ it("test if sencillo nota suspenso", function(){
     expect(resultado).toBe("bien");
   });
 
-  if ("test if con else nota rango", function() {
+  it ("test if con else nota rango", function() {
     var nota=8;
     var resultado="";
     if(nota>=5 && nota <7) {
