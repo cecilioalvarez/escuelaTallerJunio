@@ -41,4 +41,13 @@ it("test if sencillo nota suspenso", function(){
 
     });
 
+    it("test if sencillo con calusula OR", function() {
+      var nota=1;
+      var resultado="";
+      if (nota<2 || nota >8) {
+        resultado="eres de los pocos elegidos";
+      }
+      expect(resultado).toBe("eres de los pocos elegidos");
+    });
+
 });
