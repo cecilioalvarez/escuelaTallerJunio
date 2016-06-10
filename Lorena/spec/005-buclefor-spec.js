@@ -35,6 +35,5 @@ describe("bucle for ", function() {
             suma=suma+2;
         }
         expect(suma).toBe(20);
-
     });
 });
