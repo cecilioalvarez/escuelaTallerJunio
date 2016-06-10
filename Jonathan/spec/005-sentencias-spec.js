@@ -41,7 +41,7 @@ describe("Manejo de Sentencias If", function() {
     resultado="no tienes un bien";
   }
 
-  expect(resultado).toBe("bien");
+  expect(resultado).toBe("no tienes un bien");
   });
 
 });
