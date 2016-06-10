@@ -44,5 +44,17 @@ describe("Manejo de Sentencias If", function(){
     }
     expect(resultado).toBe("No tienes un Bien");
   });
+  it("Test if con clausula OR", function(){
+
+    var nota=8;
+    var resultado="";
+
+    if (nota <2 || nota>8) {
+
+}else{
+      resultado="Eres de los pocos elegidos";
+    }
+    expect(resultado).toBe("Eres de los pocos elegidos");
+  });
 
 });
