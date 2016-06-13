@@ -64,7 +64,7 @@ it ("busca valores repetidos", function() {
   var numero=0;
   for (var i=0; i<array.length; i++) {
       if (array[i] == numero) {
-        contador++
+        contador++;
       }
   }
 expect(contador).toBe(2);
@@ -82,4 +82,5 @@ it ("sumar valores mayores de cinco", function() {
     }
 expect(suma).toBe(21);
 });
+
 });
