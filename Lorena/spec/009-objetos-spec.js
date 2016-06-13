@@ -1,20 +1,25 @@
 describe("manejo de objetos ", function() {
 
-    it("igualdad objeto consigo mismo", function() {
+    it("test de identidad de objetos", function() {
 
 var objeto1={nombre:"pepe"};
 var objeto2={nombre:"pepe"};
-expect(objeto1).toBe(objeto1);
+expect(objeto1).not.toBe(objeto2);
 
     });
 
-
-
-    it("igualdad objeto consigo mismo", function() {
+    it("test comparacion objetos entre si", function() {
 
 var objeto1={nombre:"pepe"};
 var objeto2={nombre:"pepe"};
 expect(objeto1).toEqual(objeto2);
+
+    });
+
+    it("test contiene propiedad", function() {
+var objeto1={nombre:"pepe"};
+
+expect(objeto1.nombre).toBeDefined();
 
     });
     });
