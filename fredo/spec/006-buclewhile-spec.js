@@ -19,6 +19,6 @@ do{
   i++;
 }while(i<10){
   expect(suma).toBe(45);
-
+}
 });
 });
