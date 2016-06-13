@@ -77,3 +77,19 @@ it("test menor del array", function() {
       });
 
       });
+
+          it("suma mayor5", function() {
+            var lista= [2,6,7,4,6];
+            var elemento=5;
+            var contador=0;
+            for(var i=0; i<lista.length; i++) {
+              if(elemento[i]>5) {
+                suma=suma+i;
+              }
+          }
+
+            expect(suma).toBe(11);
+
+
+            });
+  });
