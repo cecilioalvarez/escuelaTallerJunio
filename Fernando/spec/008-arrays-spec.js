@@ -30,7 +30,7 @@ describe(" Manejo de arrays", function () {
   });
 
 
-  it ("test menor del array", function() {
+  it ("test contar numero de doses", function() {
 
     var lista=[4,2,2,2,6,7];
     var contador=0;
@@ -42,4 +42,17 @@ describe(" Manejo de arrays", function () {
     expect(contador).toBe(3);
   });
 
+
+  it ("test sumar numeros mayores de 5", function() {
+
+    var lista=[4,2,2,6,7];
+    var numero=5;
+    var suma=0;
+    for (var i=0;i<lista.length;i++){
+      if (lista[i]>numero){
+        suma=suma+lista[i];
+      }
+  }
+    expect(suma).toBe(13);
+  });
 });
