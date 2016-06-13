@@ -12,4 +12,9 @@ it("igualdad entre dos objetos",function(){
   expect(objeto1).toEqual(objeto2);
 
 });
+it("test contiene propiedad nombre",function(){
+var objeto1={nombre:"pepe"};
+expect(objeto1.nombre).toBeDefined();
+
+});
 });
