@@ -1,7 +1,7 @@
 describe("Manejo de Objetos",
     function() {
 
-        it("igualdad entre Objetos",
+        it("test de identidad de Objetos",
             function() {
                 var objeto1 = {
                     nombre: "pepe"
@@ -9,12 +9,12 @@ describe("Manejo de Objetos",
                 var objeto2 = {
                     nombre: "pepe"
                 };
-                expect(objeto1).toBe(objeto1);
+                expect(objeto1).not.toBe(objeto2);
             });
 
 
 
-        it("Manejo ente dos Objetos",
+        it("test comparacion objetos entre si",
             function() {
                 var objeto1 = {
                     nombre: "pepe"
