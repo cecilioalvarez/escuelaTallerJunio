@@ -15,7 +15,8 @@ it("test if sencillo nota suspenso", function(){
   var nota=3;
   var resultado="";
   if (nota<5) {
-    resultado=()"suspenso");
+    resultado="suspenso";
+  }
   });
 
   it("test if sencillo nota rango bien", function(){
@@ -23,7 +24,7 @@ it("test if sencillo nota suspenso", function(){
     var resultado="";
     if (nota>=5 && nota <7) {
       resultado="bien";
-
+    }
     expect(resultado).toBe("bien");
   });
 
