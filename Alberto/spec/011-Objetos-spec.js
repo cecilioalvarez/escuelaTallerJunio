@@ -70,4 +70,16 @@ it ("busca valores repetidos", function() {
 expect(contador).toBe(2);
 
 });
+
+it ("sumar valores mayores de cinco", function() {
+  var array=[1,2,4,6,2,7,8];
+  var numero=5;
+  var suma=0;
+  for (var i=0; i<array.length; i++) {
+      if (array[i] > numero) {
+        suma=suma+array[i];
+      }
+    }
+expect(suma).toBe(21);
+});
 });
