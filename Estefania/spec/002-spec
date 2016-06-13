@@ -29,6 +29,7 @@ describe ("Conjunto text", function () {
     expect(true).toBe(true);
      var numero1=3;
      var numero2=2;
-     var division=numero1/numero2;
+     var division=numero1/
+     numero2;
      expect(division).toBe(1,5);
   });
