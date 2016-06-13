@@ -13,4 +13,22 @@ expect(resultado).toBe(10);
 
 });
 
+it("test bucle for suma 10 items", function() {
+var i=0;
+  var resultado=0;
+  do {
+
+resultado=resultado+i;
+i++;
+  }
+  while (i < 10) {
+
+
+expect(resultado).toBe(45);
+}
+
+
+});
+
+
 });
