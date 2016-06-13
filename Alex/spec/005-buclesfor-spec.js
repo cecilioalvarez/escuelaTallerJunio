@@ -9,4 +9,12 @@ describe("suma 10 primeros numeros", function() {
 
   });
 
+  it("test suma 5 primeros numeros", function() {
+    var resultado=0;
+    for(var i=0;i<5;i++) {
+      resultado=resultado+(i*2);
+    }
+  expect(resultado).toBe(20);
+});
+
 });
