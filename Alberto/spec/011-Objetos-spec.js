@@ -56,4 +56,18 @@ it ("busca el menor", function() {
   }
 expect(menor).toBe(1);
 });
+
+
+it ("busca valores repetidos", function() {
+  var array=[1,2,4,6,2];
+  var contador=2;
+  var numero=0;
+  for (var i=0; i<array.length; i++) {
+      if (array[i] == numero) {
+        contador++
+      }
+  }
+expect(contador).toBe(2);
+
+});
 });
