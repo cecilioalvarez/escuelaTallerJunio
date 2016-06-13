@@ -20,9 +20,20 @@ describe("Manejo de Objetos",
                     nombre: "pepe"
                 };
                 var objeto2 = {
-                    nombre: "pepe"
-                };
-                expect(objeto1).toEqual(objeto2);
+                    nombre: "pepe"};
+                    expect(objeto1).toEqual(objeto2);
+
+
             });
 
+
+
+            it("test contiene propiedad nombre",
+                function() {
+                    var objeto1 = {
+                        nombre: "pepe"
+                    };
+
+                    expect(objeto1.nombre).tobeDefined();
     });
+        });
