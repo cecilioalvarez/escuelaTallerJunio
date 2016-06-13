@@ -16,5 +16,12 @@ var objeto2={nombre:"pepe"};
 expect(objeto1).toEqual(objeto2);
 });
 
+it("test contiene propiedad", function() {
+
+var objeto1={nombre:"pepe"};
+
+
+expect(objeto1.nombre).toBeDefined();
+});
 
 });
