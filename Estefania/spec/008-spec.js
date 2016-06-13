@@ -23,10 +23,25 @@ it ("test longitud array", function () {
 });
 it("test suma items del array", function() {
   var lista= [1,2,3];
-  var suma0;
+  var suma=0;
   for(var i=0; i<lista.length; i++) {
     suma= suma + lista[i];
 
   }
-  expect(suma).tobe(3);
+  expect(suma).toBe(3);
 });
+
+
+it("test menor del array", function() {
+  var lista= [2,2,3,5,1];
+  var suma=lista [0];
+  for(var i=0; i<lista.length; i++) {
+    if=lista[i];
+}
+  }
+  expect(menor).toBe(1);
+
+
+  });
+
+  });
