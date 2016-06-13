@@ -17,4 +17,15 @@ describe("manejo de bucle while ", function() {
       }
       expect(suma).toBe(45);
   });
-});
+
+it("test bucle DO while suma de los 10 primeros", function() {
+i=0;
+suma=0;
+
+  do {suma=suma+i;
+    i++}
+  while (i < 10);
+
+  expect(suma).toBe(45);
+  });
+  });
