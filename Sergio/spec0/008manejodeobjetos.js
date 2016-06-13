@@ -30,4 +30,16 @@ suma=suma+lista(i);
 
 }
 });
+it("text suma items del array", function() {
+
+var lista=(2,2,3,4,5);
+var elemento=2;
+var contador=0;
+for (var i=0;i<lista.length; i++){
+if (elemento==lista(i)){
+  contador++;
+}excep(contador).toBe(2);
+
+}
+});
 });
