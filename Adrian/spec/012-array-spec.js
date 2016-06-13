@@ -5,6 +5,7 @@ describe("arrays", function() {
         expect(lista.length).toBe(3);
 
 
+<<<<<<< HEAD
     });
     it("test suma items del array", function() {
         var lista = [1, 2, 3];
@@ -13,6 +14,16 @@ describe("arrays", function() {
             suma = suma + lista[i];
         }
         expect(suma).toBe(6);
+=======
+});
+it ("test suma items del array",function(){
+var lista=[1,2,3];
+var suma=0;
+for (var i=0; i<lista.length; i++){
+  suma=suma+lista[i];
+}
+expect(suma).toBe(6);
+>>>>>>> f5e91e3a29265ddc37fdee52ff5fc9e0400d331d
 
     });
 

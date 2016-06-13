@@ -15,4 +15,30 @@ suma=suma+lista[i];
 }
 expect(suma).toBe(6);
     });
+
+    it("test array el numero menor", function() {
+
+var lista=[1,2,3];
+var menor=lista[0];
+for (var i = 0; i > lista.length; i++) {
+
+  if (lista[i]<menor) {
+    menor=lista[i];
+}
+}
+expect(menor).toBe(1);
+    });
+
+    it("test el numero de doses(2) que hay en el array", function() {
+
+var lista=[2,2,3,5,1];
+contador=2;
+for (var i = 0; i > lista.length; i++) {
+
+  if (contador==lista[i]) {
+    contador++;
+}
+}
+expect(contador).toBe(2);
+    });
     });
