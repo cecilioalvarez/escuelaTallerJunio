@@ -34,6 +34,6 @@ describe("Manejo de Objetos",
                         nombre: "pepe"
                     };
 
-                    expect(objeto1.nombre).tobeDefined();
+                    expect(objeto1.nombre).toBeDefined();
     });
         });
