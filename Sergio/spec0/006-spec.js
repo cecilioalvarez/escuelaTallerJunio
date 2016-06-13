@@ -1,37 +1,13 @@
-describe("Conjunto test", function() {
+describe("Manejo de bucle while", function() {
 
-  it("test for sencillo", function() {
+  it("test bucle for suma 10 items", function() {
 
-var resultado=0;
-
-for(var i=0;i<10;i++) {
-resultado=resultado+i;
-
-}
-expect(resultado).toBe(45);
-});
-it("test for pares", function() {
-
-var resultado=0;
-
-for(var i=0;i<5;i++) {
-resultado=resultado+(i*2);
+var i=0;
+var suma=0;
+while (i<10){
+suma=suma+i;
+i++;
 
 }
-expect(resultado).toBe(20);
-});
-
-it("test bucle while suma 5 primeros pares", function() {
-  var resultado=0;
-  while (resultado < 20) {
-
-
-resultado=resultado+2;
-
-    }
-
-
-expect(resultado).toBe(20);
-});
-
+expect(suma).toBe(10);
 });
