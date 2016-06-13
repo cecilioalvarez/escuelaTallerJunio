@@ -1,14 +1,14 @@
 describe("Manejo de objetos", function() {
 
-  it("igualdad objeto mismo", function(){
+  it("test de igualdad de objetos", function(){
 
 var objeto1={nombre:"pepe"};
 var objeto2={nombre:"pepe"};
 
-expect(objeto1).toBe(objeto1);
+expect(objeto1).not.toBe(objeto2);
 });
 
-it("igualdad entre dos objetos", function() {
+it("test comparacion objetos entre si", function() {
 
 var objeto1={nombre:"pepe"};
 var objeto2={nombre:"pepe"};
