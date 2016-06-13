@@ -35,8 +35,6 @@ describe("Manejo  de arrays", function() {
             }
         }
         expect(contador).toBe(2);
-
-
     });
 
 });
