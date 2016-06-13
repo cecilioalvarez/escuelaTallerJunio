@@ -10,7 +10,7 @@ expect(suma).toBe(12);
 
 
 });
-it ("parse numeros decimales", function(){
+it ("parse numeros decimales", function(){ 
 
 var cadena1=5.2;
 var cadena2=7.3;
