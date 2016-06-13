@@ -1,12 +1,24 @@
-describe ("Bucles", function(){
+describe ("pases", function(){
 it ("parse numeros enteros", function() {
-      var resultado=5;
-      var resultado=7;
+      var cadena1=5;
+      var cadena2=7;
 
         var numero1=parseInt(cadena1);
-          var numero1=parseInt(cadena2);
-          var suma= numero1+numero2;
+        var numero2=parseInt(cadena2);
+        var suma= numero1+numero2;
 
-  expect(suma).toBe(45);
+  expect(suma).toBe(12);
+
+});
+it ("parse numeros decimales", function() {
+      var cadena1=5.2;
+      var cadena2=7.3;
+
+      var numero1=parseFloat(cadena1);
+      var numero2=parseFloat(cadena2);
+      var suma= numero1+numero2;
+
+      expect(suma).toBe(12.5);
+
 })
 });
