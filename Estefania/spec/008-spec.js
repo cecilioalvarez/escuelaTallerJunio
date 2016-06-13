@@ -45,3 +45,51 @@ it("test menor del array", function() {
   });
 
   });
+
+
+  it("test menor del array", function() {
+    var lista= [2,2,3,5,1];
+    var suma=lista [0];
+    for(var i=0; i<lista.length; i++) {
+      if=lista[i];
+  }
+    }
+    expect(menor).toBe(1);
+
+
+    });
+
+    });
+
+    it("numero de voces de 2", function() {
+      var lista= [2,2,3,4,5];
+      var elemento=2;
+      var contador=0;
+      for(var i=0; i<lista.length; i++) {
+        if(elemento==lista[i]) {
+          contador++;
+        }
+    }
+
+      expect(contador).toBe(2);
+
+
+      });
+
+      });
+
+          it("suma mayor5", function() {
+            var lista= [2,6,7,4,6];
+            var elemento=5;
+            var contador=0;
+            for(var i=0; i<lista.length; i++) {
+              if(elemento[i]>5) {
+                suma=suma+i;
+              }
+          }
+
+            expect(suma).toBe(11);
+
+
+            });
+  });
