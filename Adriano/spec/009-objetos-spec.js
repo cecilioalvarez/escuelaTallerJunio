@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 describe("Manejo de objetos", function(){
 
   it("Test de identidad de objetos", function(){
@@ -24,7 +24,7 @@ it("test contiene propiedad nombre", function(){
 
 });
 });
-=======
+
 describe("Manejo de Objetos", function(){
 
   it("igualdad entre objetos", function(){
@@ -38,4 +38,3 @@ describe("Manejo de Objetos", function(){
 
 
 });
->>>>>>> 0ed4afa0942ae384f42b5a1faa618c0caf6f6caf
