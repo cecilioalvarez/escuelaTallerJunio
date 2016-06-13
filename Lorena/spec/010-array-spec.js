@@ -57,4 +57,14 @@ for (var i = 0; i < lista.length; i++) {
 }
 expect(suma).toBe(19);
     });
+
+    it("test suma de 10 primeros numeros negativos", function() {
+
+suma=0;
+for (var i = 0; i > -10; i--) {
+
+suma=suma+i;
+}
+expect(suma).toBe(-45);
+    });
     });
