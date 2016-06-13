@@ -17,6 +17,4 @@ describe("test array", function() {
         }
         expect(suma).toBe(6);
     });
-
-
 });
