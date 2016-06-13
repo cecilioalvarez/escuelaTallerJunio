@@ -1,17 +1,22 @@
-describe ("suma de un bucle", function(){
-  it ("test bucle for suma", function() {
-    var resultado=0;
-    for (var i=0;i<10;i++){
-      resultado=resultado+i;
+describe ("suma de un bucle while", function(){
+  it ("test bucle while suma 10 items", function() {
+var i=0;
+var suma=0;
+while(i<10){
+  suma=suma+i;
+  i++;
 }
-expect(resultado).toBe(45)
+expect(suma).toBe(45);
 });
+it ("test bucle do while suma", function() {
+var i=0;
+var suma=0;
+do {
+  suma=suma+i;
+  i++;
+}while(i<10){
 
-it ("test bucle for suma 5 primeros pares", function() {
-  var suma=0;
-  for(var i=0;i<5;i++){
-    suma=suma+(i*2);
-  }
-  expect(suma).toBe(20);
+expect(suma).toBe(45);
+}
 });
 });

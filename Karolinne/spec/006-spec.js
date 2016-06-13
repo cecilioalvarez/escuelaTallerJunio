@@ -1,21 +1,12 @@
-describe ("suma de un bucle while", function(){
-  it ("test bucle for suma 10 items", function() {
-var i=0;
-var suma=0;
-while(i<10){
-  suma=suma+i;
-  i++;
-}
-expect(suma).toBe(45);
-});
+describe ("Manejo de Parse", function(){
+  it ("parse numeros enteros", function() {
 
-  it ("test bucle suma pares", function() {
-    var suma=0;
-    for(var i=0;i<=5;i++){
-      suma=suma+(i*2);
-    }
-    expect(suma).toBe(30);
-
+    var cadena1=5;
+    var cadena2=7;
+    var numero1=parseInt(cadena1);
+    var numero2=parseInt(cadena2);
+    var suma=numero1+numero2;
+    expect(suma).toBe(12);
 
 });
 });
