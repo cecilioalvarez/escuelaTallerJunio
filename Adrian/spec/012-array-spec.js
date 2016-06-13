@@ -9,7 +9,7 @@ it("test longitud array",function(){
 it ("test suma items del array",function(){
 var lista=[1,2,3];
 var suma=0;
-for(var i=0;i<lista.length;i++){
+for (var i=0; i<lista.length; i++){
   suma=suma+lista[i];
 }
 expect(suma).toBe(6);
