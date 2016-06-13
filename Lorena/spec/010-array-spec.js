@@ -20,9 +20,12 @@ expect(suma).toBe(6);
 
 var lista=[1,2,3];
 var menor=lista[0];
-for (var i = 0; i > lista.length; i++) {}
-if (lista[i]<menor) {
-  menor=lista[i];
+for (var i = 0; i > lista.length; i++) {
+
+  if (lista[i]<menor) {
+    menor=lista[i];
+}
+
 }
 expect(menor).toBe(1);
     });
