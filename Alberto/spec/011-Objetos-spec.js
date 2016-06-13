@@ -46,5 +46,40 @@ it ("suma array", function() {
 expect(suma).toBe(15);
 
 });
+it ("busca el menor", function() {
+  var array=[1,2,3,4,5];
+  var menor=array[0];
+  for (var i=0; i<array.length; i++) {
+      if (array[i] < menor) {
+        menor=array[i];
+      }
+  }
+expect(menor).toBe(1);
+});
 
+
+it ("busca valores repetidos", function() {
+  var array=[1,2,4,6,2];
+  var contador=2;
+  var numero=0;
+  for (var i=0; i<array.length; i++) {
+      if (array[i] == numero) {
+        contador++
+      }
+  }
+expect(contador).toBe(2);
+
+});
+
+it ("sumar valores mayores de cinco", function() {
+  var array=[1,2,4,6,2,7,8];
+  var numero=5;
+  var suma=0;
+  for (var i=0; i<array.length; i++) {
+      if (array[i] > numero) {
+        suma=suma+array[i];
+      }
+    }
+expect(suma).toBe(21);
+});
 });

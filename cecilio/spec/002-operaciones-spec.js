@@ -8,9 +8,5 @@ describe(" Conjunto test Operaciones", function() {
     var resultado=numero1+numero2;
     expect(resultado).toBe(4);
 
-
   });
-
-
-
 });
