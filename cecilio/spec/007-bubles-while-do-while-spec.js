@@ -30,9 +30,4 @@ describe("Manejo de bucle  while", function() {
 
     });
 
-
-
-
-
-
 });
