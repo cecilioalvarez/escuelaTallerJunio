@@ -32,15 +32,20 @@ describe(" Manejo de arrays", function () {
   });
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  it ("test repetidos del array", function() {
-=======
-=======
+  it("test el numero de doses(2) que hay en el array", function() {
 
->>>>>>> c9fba737564b16f9e3d5945fa6d2dc801e91caf6
+var lista=[2,2,3,5,1];
+var contador=2;
+for (var i=0; i>lista.length; i++) {
+  if (contador==lista[i]) {
+  contador++;
+    }
+  }
+expect(contador).toBe(2);
+  });
+
   it ("test contar numero de doses", function() {
->>>>>>> bddde5ebf030e3bb487b69388efde3ad707b3de8
+
 
     var lista=[4,2,2,2,6,7];
     var elemento=2;
@@ -174,7 +179,6 @@ describe(" Manejo de arrays", function () {
     }
     expect(lista2).toEqual(["eres mierda","peor que la mierda","puto amo","no esta mal","te salvas"]);
   });
-
 
 
 });
