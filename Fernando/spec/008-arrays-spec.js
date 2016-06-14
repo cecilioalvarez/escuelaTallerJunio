@@ -57,14 +57,14 @@ describe(" Manejo de arrays", function () {
   });
 
 
-    it ("test sumar numeros mayores de 5", function() {
+    it ("test media de un array", function() {
 
     var lista=[4,2,2,5,7];
     var suma=0;
     for (var i=0;i<lista.length;i++){
       suma=suma+lista[i];
-      var media=suma/lista.length;
-    }
+  }
+    var media=suma/lista.length;
     expect(media).toBe(4);
   });
 
