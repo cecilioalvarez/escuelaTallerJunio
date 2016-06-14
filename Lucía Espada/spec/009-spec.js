@@ -10,7 +10,7 @@ for(var i=0;i>-10;i--){
 
   }
 
-expect(sumamayor).toBe(-45);
+expect(suma).toBe(-45);
 
 });
 });
