@@ -7,6 +7,7 @@ describe(" Manejo de arrays", function () {
   });
 
 
+
   it ("test suma array", function() {
     var suma=0;
     var lista=[1,3,6,7];
@@ -15,6 +16,7 @@ describe(" Manejo de arrays", function () {
     }
     expect(suma).toBe(17);
   });
+
 
 
   it ("test menor del array", function() {
@@ -30,6 +32,7 @@ describe(" Manejo de arrays", function () {
   });
 
 
+
   it ("test contar numero de doses", function() {
 
     var lista=[4,2,2,2,6,7];
@@ -41,6 +44,7 @@ describe(" Manejo de arrays", function () {
     }
     expect(contador).toBe(3);
   });
+
 
 
   it ("test sumar numeros mayores de 5", function() {
@@ -57,7 +61,8 @@ describe(" Manejo de arrays", function () {
   });
 
 
-    it ("test media de un array", function() {
+
+  it ("test media de un array", function() {
 
     var lista=[4,2,2,5,7];
     var suma=0;
@@ -68,5 +73,14 @@ describe(" Manejo de arrays", function () {
     expect(media).toBe(4);
   });
 
+
+
+  it ("test media de un array", function() {
+
+    var lista=[4,2,2,5,7];
+    expect(lista.length).toBe(5);
+    lista.push(4,9);
+    expect(lista.length).toBe(7);
+  });
 
 });
