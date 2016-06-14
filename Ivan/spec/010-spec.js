@@ -104,4 +104,27 @@ it ("test Bucle array al reves", function() {
 }
 expect(texto).toEqual("75224");
 });
+
+it ("test Bucle array al reves", function() {
+
+  var lista=[1,2,3,4,5];
+  var lista2=[];
+  for (var i=0;i<lista.length;i++){
+  lista2.push(lista[i]*2);
+
+}
+expect(lista2).toEqual([2,4,6,8,10]);
+});
+
+it ("test Bucle array al reves", function() {
+
+  var lista=[5,3,7,1];
+  var lista2=[];
+  for (var i=0;i<lista.length;i++){
+    if (lista[i]>=5){lista2.push("aprobado");}
+else{lista2.push("suspenso");}
+
+}
+expect(lista2).toEqual(["aprobado","suspenso","aprobado","suspenso"]);
+    });
 });

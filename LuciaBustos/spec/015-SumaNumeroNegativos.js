@@ -118,13 +118,4 @@ describe("Manejo  de arrays", function() {
     });
 
 
-
-
-
-
-
-
-
-
-
 });
