@@ -89,4 +89,16 @@ describe("manejo de arrays ", function() {
         }
         expect(lista2).toEqual([9,8,7,6,5,4,3,2,1]);
     });
+
+
+it("test array con items al cuadrado", function() {
+    var lista = [1, 2, 3];
+    var lista2 = [];
+    for (i = 0; i < lista.length; i++) {
+
+        lista2.push(lista[i]*2);
+        //console.log(lista2);
+    }
+    expect(lista2).toEqual([2,4,6]);
+});
 });
