@@ -75,7 +75,7 @@ describe(" Manejo de arrays", function () {
 
 
 
-  it ("test media de un array", function() {
+  it ("test push array", function() {
 
     var lista=[4,2,2,5,7];
     expect(lista.length).toBe(5);
