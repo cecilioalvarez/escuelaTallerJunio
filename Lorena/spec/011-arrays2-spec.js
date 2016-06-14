@@ -50,11 +50,43 @@ describe("manejo de arrays ", function() {
         var lista2 = [];
 
         for (i = 0; i < lista.length; i++) {
-          if (lista[i] > 3) {
-              lista2.push(lista[i]);
-          }
+            if (lista[i] > 3) {
+                lista2.push(lista[i]);
+            }
         }
 
         expect(lista2.length).toBe(1);
+    });
+
+
+    it("test recorrer array alreves bucle for", function() {
+        var lista = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        for (i = lista.length - 1; i >= 0; i--) {
+
+            console.log(lista[i]);
+        }
+        expect(lista.length).toBe(9);
+    });
+
+    it("test recorrer array alreves bucle for de otra forma", function() {
+        var lista = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var texto = "";
+        for (i = lista.length-1; i >= 0; i--) {
+            texto = texto + lista[i];
+        }
+        expect(texto).toBe("987654321");
+    });
+
+
+    it("test poner array alreves bucle for", function() {
+        var lista = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var lista2 = [];
+        for (i = lista.length-1; i >= 0; i--) {
+
+            lista2.push(lista[i]);
+            //console.log(lista2);
+        }
+        expect(lista2).toEqual([9,8,7,6,5,4,3,2,1]);
     });
 });

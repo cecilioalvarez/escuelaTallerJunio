@@ -72,5 +72,36 @@ expect(lista.length).toBe(5);
 lista.push(6);
 expect(lista.length).toBe(6);
 });
+it ("test rellenar array", function() {
 
+  var lista=[4,2,2,5,7];
+  var lista2=[];
+  for (var i=0;i<lista.length;i++){
+    lista2.push(lista[i]);
+}
+  expect(lista).toEqual(lista2);
+});
+it ("test rellenar array mayores de 3", function() {
+
+  var lista=[4,2,2,5,7];
+  var lista2=[];
+  for (var i=0;i<lista.length;i++){if (lista[i] >=4) {
+
+      lista2.push(lista[i]);
+  } else {}
+
+}
+  expect(lista2.length).toBe(3);
+});
+
+it ("test Bucle array al reves", function() {
+
+  var lista=[4,2,2,5,7];
+  var texto="";
+  for (var i=lista.length-1;i>=0;i--){
+    texto=texto+lista[i];
+
+}
+expect(texto).toEqual("75224");
+});
 });
