@@ -6,6 +6,6 @@ describe("Array negativo", function() {
         for (i=array.length-1; i>=0; i--) {
           texto=texto+i;
             }
-        expect(texto).toEqual(54321);
+        expect(texto).toEqual("43210");
     });
 });
