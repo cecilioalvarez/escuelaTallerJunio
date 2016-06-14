@@ -4,7 +4,7 @@ describe("Manejo  de arrays", function() {
 
         var lista = [1, 2, 3];
 
-        expect(lista.length).toBe(3)
+        expect(lista.length).toBe(3);
 
 
     });

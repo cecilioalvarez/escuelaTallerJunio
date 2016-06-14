@@ -43,14 +43,14 @@ it ("test numero de veces que sale el 2", function() {
   });
 
   it ("test suma de números mayores de 5", function() {
-  var lista =[1,2,3,4,5,6];
+  var lista =[1,2,3];
   var suma=0;
   for(var i=0;i<lista.length-1;i++){
-    if (lista[i]>=5){
-      suma = suma+lista[i];
+    if (lista[i]>=lista.length){
+      suma = suma+lista[i]/2;
     }
     }
-  expect(sumamayor).toBe(11);
+  expect(sumamayor).toBe(2);
 
 });
   });

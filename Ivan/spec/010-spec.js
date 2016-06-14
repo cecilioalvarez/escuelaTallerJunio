@@ -46,4 +46,13 @@ it ("test sumar numeros mayores de 5", function() {
 }
   expect(suma).toBe(13);
 });
+
+it ("test suma 10 numeros negativos", function() {
+  var suma=0;
+  for (var i=0;i>-10;i--){
+    suma=suma+i;
+  }
+  expect(suma).toBe(-45);
+});
+
 });
