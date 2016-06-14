@@ -57,12 +57,15 @@ describe(" Manejo de arrays", function () {
   });
 
 
-  it ("test suma 10 numeros negativos", function() {
+    it ("test sumar numeros mayores de 5", function() {
+
+    var lista=[4,2,2,5,7];
     var suma=0;
-    for (var i=0;i>-10;i--){
-      suma=suma+i;
+    for (var i=0;i<lista.length;i++){
+      suma=suma+lista[i];
+      var media=suma/lista.length;
     }
-    expect(suma).toBe(-45);
+    expect(media).toBe(4);
   });
 
 
