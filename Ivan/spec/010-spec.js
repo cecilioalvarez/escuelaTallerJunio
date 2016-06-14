@@ -46,4 +46,31 @@ it ("test sumar numeros mayores de 5", function() {
 }
   expect(suma).toBe(13);
 });
+
+it ("test suma 10 numeros negativos", function() {
+  var suma=0;
+  for (var i=0;i>-10;i--){
+    suma=suma+i;
+  }
+  expect(suma).toBe(-45);
+});
+
+it("test media array", function() {
+
+var lista=[1,5,3,3,1];
+var suma=0;
+for (var i = 0; i < lista.length; i++) {
+suma=suma+lista[i]/5;
+}
+expect(suma).toBe(2.6);
+});
+
+it("test añadir array", function() {
+
+var lista=[4,5,3,2,1];
+expect(lista.length).toBe(5);
+lista.push(6);
+expect(lista.length).toBe(6);
+});
+
 });
