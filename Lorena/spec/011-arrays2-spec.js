@@ -57,4 +57,15 @@ describe("manejo de arrays ", function() {
 
         expect(lista2.length).toBe(1);
     });
+
+
+it("test recorrer array alreves bucle for", function() {
+  var lista = [1,2,3,4,5,6,7,8,9];
+
+  for (i=lista.length-1; i>=0; i--) {
+
+  console.log(lista[i]);
+  }
+    expect(lista.length).toBe(9);
+});
 });
