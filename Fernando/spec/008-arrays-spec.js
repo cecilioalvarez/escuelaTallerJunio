@@ -30,16 +30,17 @@ describe(" Manejo de arrays", function () {
   });
 
 
-  it ("test menor del array", function() {
+  it ("test repetidos del array", function() {
 
     var lista=[4,2,2,2,6,7];
+    var elemento=2;
     var contador=0;
     for (var i=0;i<lista.length;i++){
-      if(lista[i]==2){
+      if(elemento==lista[i]){
         contador++;
         }
     }
-    expect(contador).toBe(3);
+    expect(contador).toBe(2);
   });
 
 });
