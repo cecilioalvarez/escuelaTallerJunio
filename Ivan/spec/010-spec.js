@@ -55,4 +55,76 @@ it ("test suma 10 numeros negativos", function() {
   expect(suma).toBe(-45);
 });
 
+it("test media array", function() {
+
+var lista=[1,5,3,3,1];
+var suma=0;
+for (var i = 0; i < lista.length; i++) {
+suma=suma+lista[i]/5;
+}
+expect(suma).toBe(2.6);
+});
+
+it("test añadir array", function() {
+
+var lista=[4,5,3,2,1];
+expect(lista.length).toBe(5);
+lista.push(6);
+expect(lista.length).toBe(6);
+});
+it ("test rellenar array", function() {
+
+  var lista=[4,2,2,5,7];
+  var lista2=[];
+  for (var i=0;i<lista.length;i++){
+    lista2.push(lista[i]);
+}
+  expect(lista).toEqual(lista2);
+});
+it ("test rellenar array mayores de 3", function() {
+
+  var lista=[4,2,2,5,7];
+  var lista2=[];
+  for (var i=0;i<lista.length;i++){if (lista[i] >=4) {
+
+      lista2.push(lista[i]);
+  } else {}
+
+}
+  expect(lista2.length).toBe(3);
+});
+
+it ("test Bucle array al reves", function() {
+
+  var lista=[4,2,2,5,7];
+  var texto="";
+  for (var i=lista.length-1;i>=0;i--){
+    texto=texto+lista[i];
+
+}
+expect(texto).toEqual("75224");
+});
+
+it ("test Bucle array al reves", function() {
+
+  var lista=[1,2,3,4,5];
+  var lista2=[];
+  for (var i=0;i<lista.length;i++){
+  lista2.push(lista[i]*2);
+
+}
+expect(lista2).toEqual([2,4,6,8,10]);
+});
+
+it ("test Bucle array al reves", function() {
+
+  var lista=[5,3,7,1];
+  var lista2=[];
+  for (var i=0;i<lista.length;i++){
+    if (lista[i]>=5){lista2.push("aprobado");}
+else{lista2.push("suspenso");}
+
+}
+expect(lista2).toEqual(["aprobado","suspenso","aprobado","suspenso"]);
+    });
 });
