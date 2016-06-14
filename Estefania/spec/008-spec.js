@@ -92,4 +92,35 @@ it("test menor del array", function() {
 
 
             });
+
+            it("suma mayor5", function() {
+              var lista= [2,6,7,4,6];
+              var elemento=5;
+              var contador=0;
+              for(var i=0; i<lista.length; i++) {
+                if(elemento[i]>5) {
+                  suma=suma+i;
+                }
+            }
+
+              expect(suma).toBe(11);
+
+
+              });
+
+
+              it("test suma 10 numeros negativos", function() {
+
+                var suma=0;
+
+                for(var i=0; i> -10; i--) {
+                  if(elemento[i]>5) {
+                    suma=suma+i;
+                  }
+              }
+
+                expect(suma).toBe(-45);
+
+
+                });
   });
