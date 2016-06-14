@@ -17,3 +17,18 @@ describe("Manejo  bucle negativo", function() {
 var media=suma/lista.length;
 expect(media).toBe(3);
 });
+it("test añadir al array", function() {
+var lista=[1,2,3,4,5];
+expect(lista.length).toBe(5);
+lista.push(6);
+expect(lista.length).toBe(6);
+});
+var lista=[1,2,3,4,5];
+var lista2=[];
+for (var i = 0; i <lista.length; i++) {
+  lista2.push(lista[i]);
+}
+console.log(lista2);
+expect(lista.length).toBe(lista2.length);
+expect(lista).toEqual(lista2);
+});
