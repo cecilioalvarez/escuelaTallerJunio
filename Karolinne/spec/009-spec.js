@@ -20,7 +20,7 @@ expect(lista.length).toBe(6);
   });
 
   it("test array duplicar", function() {
-var lista=[1,2,3,4,5,1,1];
+var lista=[1,2,3,4,5,1];
 var lista2=[];
 for (i=0; i<lista.length; i++) {
 lista2.push(lista.length);
@@ -28,6 +28,6 @@ lista2.push(lista.length);
 }
 
 
-expect(lista2.length).toBe(7);
+expect(lista2.length).toBe(6);
   });
   });
