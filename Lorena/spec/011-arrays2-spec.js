@@ -19,4 +19,18 @@ lista.push(22);
 lista.push(33);
 expect(lista.length).toBe(8);
   });
+
+
+
+  it("test array duplicar", function() {
+var lista=[1,2,3,4,5,1,1];
+var lista2=[];
+for (i=0; i<lista.length; i++) {
+lista2.push(lista.length);
+
+}
+
+
+expect(lista2.length).toBe(7);
+  });
   });
