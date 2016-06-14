@@ -40,4 +40,43 @@ it ("test media de un array", function() {
   expect(media).toBe(3);
 
 });
+it ("test añadir al array", function() {
+
+  var lista=[1,2,3,4,5];
+  expect(lista.length).toBe(5);
+  lista.push(6);
+  expect(lista.length).toBe(6);
+});
+
+it ("test añadir al array", function() {
+
+  var lista1=[1,2,3,4,5];
+  var lista2=[];
+  for(var i=0; i<lista1.length; i++){
+      lista2.push(lista1[i]);
+  }
+  console.log(lista2);
+  expect(lista1.length).toBe(lista2.length);
+  expect(lista1).toEqual(lista2);
+});
+it ("test mayor de 3 array", function() {
+
+  var lista1=[1,2,3,4,5];
+  var lista2=[];
+  for(var i=0; i<lista1.length; i++){
+  if (lista1[i]>=3){
+  lista2.push(lista1[i]);
+  }
+}
+  expect(lista2.length).toBe(3);
+});
+it ("test recorrer array al reves", function() {
+
+  var lista1=[1,2,3,4,5];
+  var texto="";
+  for(var i=lista1.length; i>0; i--){
+  texto=texto+i;
+}
+  expect(texto).toEqual("54321");
+});
 });
