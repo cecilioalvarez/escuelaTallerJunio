@@ -5,7 +5,7 @@ var numero1;
 
 beforeEach(function(){
   numero1=4;
-
+  array1=[1,2,3];
 });
 it("test suma n primeros numeros", function(){
 
@@ -21,7 +21,14 @@ it("test suma n primeros numeros", function(){
 
 it("test suma elementos en el array", function(){
 
-  expect(misfunciones.longitudarray(numero1)).toBe(24);
+  expect(misfunciones.longitudarray(array1)).toBe(3);
 
 });
+
+it("test suma elementos en el array", function(){
+
+  expect(misfunciones.sumaarray(array1)).toBe(6);
+
+});
+
 });

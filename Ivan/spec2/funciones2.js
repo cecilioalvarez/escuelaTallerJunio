@@ -29,6 +29,15 @@ var longitudarray = function longitudarray(unArray) {
 return unArray.length;
 };
 
+var sumaarray = function sumaarray(unArray) {
+
+  var suma= 0;
+  for (var i=0; i <unArray.length; i++) {
+  suma = suma + unArray[i];
+}
+return suma;
+};
 exports.sumaNumeros = sumaNumeros;
 exports.factorial=productoNumeros;
 exports.longitudarray=longitudarray;
+exports.sumaarray=sumaarray;
