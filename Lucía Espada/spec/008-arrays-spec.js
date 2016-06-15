@@ -170,5 +170,18 @@ it("test array notas y texto", function() {
     expect(lista2).toEqual(["muy mal", "mal", "bien", "notable", "sobresaliente"]);
 });
 
+it("test 3 arrays y que sumen 2 de ellas", function() {
+
+    //bloque de código
+    var lista = [1, 2, 3, 4, 5];
+    var lista2 = [1, 2, 3, 4, 5];
+    var lista3 = [];
+    for (var i = 0; i < lista.length; i++) {
+
+        lista3.push(lista[i]+lista2[i]);
+        //console.log(lista2);
+    }
+    expect(lista3).toEqual([2, 4, 6, 8, 10]);//EQUAL = MAS COMPLEJO
+});
 
 });
