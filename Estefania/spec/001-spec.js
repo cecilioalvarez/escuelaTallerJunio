@@ -1,34 +1,47 @@
-describe ("Conjunto text", function () {
-  it("suma", function() {
-    expect(true).toBe(true);
-     var numero1=3;
-     var numero2=2;
-     var suma=numero1+numero2;
-     expect(suma).toBe(5);
+
+describe(" Conjunto test", function() {
+
+  it("test variables suma", function() {
+
+    var numero1=2;
+    var numero2=3;
+    var suma=numero1+numero2;
+
+    expect(suma).toBe(5);
+
+
   });
 
+  it ("test variables suma texto" ,function () {
+    var texto1="hola";
+    var texto2="adios";
+    var resultado=texto1+texto2;
 
-  it("resta", function() {
-    expect(true).toBe(true);
-     var numero1=3;
-     var numero2=2;
-     var resta=numero1-numero2;
-     expect(resta).toBe(1);
+    expect(resultado).toBe("holaadios");
+
+
   });
 
-  it("multiplicacion", function() {
-    expect(true).toBe(true);
-     var numero1=3;
-     var numero2=2;
-     var multiplicacion=numero1*numero2;
-     expect(multiplicacion).toBe(6);
+  it("test variables suma 3 textos", function() {
+    var texto1="hola";
+    var texto2="que";
+    var texto3="tal";
+    var resultado=texto1+texto2+texto3;
+
+    expect(resultado).toBe("holaquetal");
+
   });
 
+  it("test cambiar valor variable",function() {
+    var variable="hola";
 
-  it("division", function() {
-    expect(true).toBe(true);
-     var numero1=3;
-     var numero2=2;
-     var division=numero1/numero2;
-     expect(division).toBe(1,5);
+    expect(variable).toBe("hola");
+
+    variable="adios";
+
+    expect(variable).toBe("adios");
+
+
   });
+
+});
