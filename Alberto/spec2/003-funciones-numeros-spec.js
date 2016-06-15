@@ -21,6 +21,6 @@ describe("Funciones bucles y numeros", function() {
     expect(misfunciones.sumaArray(array1)).toBe(6);
 });
 it("test comparacion y suma arrays", function() {
-  expect(misfunciones.sumaArray(array1,array2)).toBe(12);
+  expect(misfunciones.mayorArray(array1,array2)).toBe(12);
 });
 });
