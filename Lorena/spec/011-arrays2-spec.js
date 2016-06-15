@@ -123,4 +123,16 @@ describe("manejo de arrays ", function() {
         }
         expect(lista2).toEqual(["muy mal", "mal", "bien", "notable", "sobresaliente"]);
     });
+
+    it("test 3 arrays suma de los dos primeros", function() {
+
+        var lista = [1,2,3,4];
+        var lista2 = [10,4,7,2];
+        var lista3 = [];
+
+        for (var i = 0; i < lista.length; i++) {
+            lista3.push(lista[i]+lista2[i]);
+        }
+        expect(lista3).toEqual([11,6,10,6]);
+    });
 });
