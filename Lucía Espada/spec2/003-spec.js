@@ -15,4 +15,10 @@ it ("test suma n primeros numeros", function() {
 expect(misfunciones.sumaNumeros(numero1)).toBe(6);
 
 });
+
+it ("test factorial n primeros numeros", function() {
+
+expect(misfunciones.factorial(numero1)).toBe(24);
+
+});
 });

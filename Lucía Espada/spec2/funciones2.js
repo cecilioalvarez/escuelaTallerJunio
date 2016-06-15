@@ -7,7 +7,7 @@ return suma;
 };
  var productoNumeros = function productoNumeros(numero){
  var producto = 1;
- for (var i = 1; i < numero; i++) {
+ for (var i = 1; i <= numero; i++) {
    producto=producto * i;
  }
 
