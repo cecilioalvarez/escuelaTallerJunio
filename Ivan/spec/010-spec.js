@@ -127,4 +127,24 @@ else{lista2.push("suspenso");}
 }
 expect(lista2).toEqual(["aprobado","suspenso","aprobado","suspenso"]);
     });
+
+
+    it ("test bucles", function() {
+      var bucle1="";
+
+
+      for (var i=1;i<=5;i++){
+bucle1=bucle1+i;
+      }
+  expect(bucle1).toBe("12345");
+
+  var bucle2="";
+
+      for (var i=5; i>0; i--) {
+  bucle2=bucle2+i;
+      }
+var bucle3=bucle2+bucle1;
+  expect(bucle3).toBe("5432112345");
+    });
+
 });
