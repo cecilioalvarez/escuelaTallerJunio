@@ -105,7 +105,7 @@ it ("test Bucle array al reves", function() {
 expect(texto).toEqual("75224");
 });
 
-it ("test Bucle array al reves", function() {
+it ("test Bucle array y lo multiplica por 2", function() {
 
   var lista=[1,2,3,4,5];
   var lista2=[];
@@ -116,7 +116,7 @@ it ("test Bucle array al reves", function() {
 expect(lista2).toEqual([2,4,6,8,10]);
 });
 
-it ("test Bucle array al reves", function() {
+it ("test Bucle array nos da suspenso o aprobado", function() {
 
   var lista=[5,3,7,1];
   var lista2=[];
