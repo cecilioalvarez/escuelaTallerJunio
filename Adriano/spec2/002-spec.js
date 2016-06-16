@@ -1,34 +1,26 @@
-var operaciones=require("./funciones1.js");
+var misfunciones=require("./funciones2.js");
+describe("funciones basicas",function(){
 
-describe("Funciones basicas", function() {
-
-  var numero1;
-  var numero2;
-
-  beforeEach(function() {
-    var numero1=2;
-    var numero2=2;
-  });
-
-  it("Test function suma",function() {
-
-    expect(operaciones.suma(2,2)).toBe(4);
-
-  });
-
-it("test function resta", function() {
-
-  expect(operaciones.resta(2,2)).toBe(0);
-
+var numero1;
+var array1;
+beforeEach(function(){
+  numero1=4;
+  array1=[1,2,3];
 });
-it("test function multiplicar", function() {
 
-  expect(operaciones.multiplicar(2,2)).toBe(4);
-
+it("test suma o primeros numeros",function() {
+  expect(misfunciones.sumaNumeros(numero1)).toBe(6);
 });
-it("test function dividir", function() {
-
-  expect(operaciones.dividir(2,2)).toBe(1);
-
+it("test factorial o primeros numeros",function(){
+    expect(misfunciones.factorial(numero1)).toBe(24);
 });
+it("test elementos en el array",function(){
+    expect(misfunciones.longitudarray(array1)).toBe(3);
+});
+it("test suma elementos en el array",function(){
+    expect(misfunciones.sumaarray(array1)).toBe(6);
+});
+
+
+
 });

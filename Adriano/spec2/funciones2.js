@@ -1,30 +1,23 @@
-var sumaNumeros=function sumar(numero) {
-
-var suma=0;
-for (var i=0;i<numero;i++) {
-  suma=suma+i;
-
-}
-return suma;
-
+var sumaNumeros=function suma(numero){
+  var suma=0;
+  for (var i=0;i<numero;i++){
+    suma=suma+i;
+  }
+  return suma;
 };
-var productoNumeros=function productoNumeros(numero) {
 
+var productoNumeros=function productoNumeros(numero){
 var producto=1;
-for (var i=1;i<=numero;i++) {
-  producto=producto * i;
-
+for (var i=1;i<=numero;i++){
+  producto=producto*i;
 }
-return producto;
+  return producto;
 };
-
-var longitudArray=function longitudArray(unArray) {
-    return unArray.length;
-
+var longitudarray=function longitudarray(unArray){
+  return unArray.length;
 };
-
-var sumaArray=function sumaArray(unArray) {
-var total=0;
+var sumaarray= function sumaarray(unArray){
+  var total=0;
   for(var i=0;i<unArray.length;i++){
     total=total+unArray[i];
   }
@@ -32,5 +25,5 @@ var total=0;
 };
 exports.sumaNumeros=sumaNumeros;
 exports.factorial=productoNumeros;
-exports.longitudArray=longitudArray;
-exports.sumaArray=sumaArray;
+exports.longitudarray=longitudarray;
+exports.sumaarray=sumaarray;
