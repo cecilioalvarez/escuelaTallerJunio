@@ -38,16 +38,18 @@ for (var i = 0; i < lista.length; i++) {
 expect(lista2).toEqual([2,8]);
 });
 
-it ("test la media de la suma ", function() {
-  var lista=[2,3,6,8];
-  var lista2=[0];
-for (var i = 0; i < lista.length; i++) {
-    if (lista[i]>=8){lista2.push(lista[i]);
-    }
-    else if(lista[i]<=2){lista2.push(lista[i]);
-    }
-  }
-expect(lista2).toEqual([2,8]);
+it("test media suma de los array", function() {
+    var lista1=[1,2,3,4];
+    var lista2=[4,5,6,7];
+    var suma=0;
+    var listaSuma=[];
+
+    for(var i=0;i<lista1.length;i++){
+      suma=lista1[i]+lista2[i]
+      listaSuma.push(suma)
+      }
+    expect(listaSuma).toEqual([5,7,9,11]);
 });
+
 
 });
