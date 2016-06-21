@@ -4,63 +4,100 @@
 	<title>FORMULARIO ADMINISTRACIÓN</title>
 
 	<style type="text/css">
+		form{
+		padding: 2.5em 2.5em 2.5em;
 
-				p {
+		}
 
+		p {
+
+					padding-left: 2.5em ;
 					font-size: 12px;
 					font-family: Arial, sans-serif;
-						color: #01437f;
-				}
-				legend {
+					color: #01437f;
 
+			}
+		.derecha {
+
+			padding-right: 2.5em ;
+		}
+
+			.arriba{
+					padding-top: 2.5em ;
+
+			}
+			.abajo{
+					padding-bottom: 2.5em ;
+
+			}
+			legend {
+					text-align: center;
 					font-size: 20px;
 					font-family: Gadugi, sans-serif;
 					color: #58584d;
+			}
 
-				}
+			img {
+
+				width: 500px;
+			}
+
+			.caja{
+				margin-left:2%;
+				width:150px;
+
+
+
+
+			}
 				</style>
 	</head>
 	<body>
+		<center><img src="imagenayunta.jpg"/></center>
 		<form id="Mi formulario">
+
 		<fieldset>
 				<legend><strong>FORMULARIO TRABAJADOR</strong></legend>
-				<p>
+
+				<p class="arriba">
 					<label for="nombre">
 						<strong>Nombre</strong>
 						</label>
-						<input type="text" id="nombre" name="Nombre"/>
+						<input type="text" class="caja" id="nombre" name="Nombre" placeholder="Introduce Nombre" />
+
+				</p>
+				<p>
 					<label for="apellido">
 						<strong>Apellidos</strong>
 						</label>
-						<input type="text" id="apellido" name="Apellido"/>
+						<input type="text" class="caja" id="apellido" placeholder="Introduce Apellidos" name="Apellido"/>
 				</p>
+
 					<p>
 					<label for="sexo">
 					<strong>Sexo</strong>
 					</label>
-							<input type="radio" name= "Sexo"/> Maculino
+							<input type="radio"  name= "Sexo"/> Maculino
 						<input type="radio" name= "Sexo"/> Femenino
 					</p>
 					<p>
 						<label for="DNI">
 						<strong>DNI</strong>
 						</label>
-						<input type="text" id="DNI" name="dni"/>
+						<input type="text" class="caja" id="DNI" placeholder="Introduce DNI"  name="dni"/>
 					</p>
 					<p>
 						<label for="domicilio">
 						<strong>Domicilio</strong>
 						</label>
-						<input type="text" id="domicilio" name="Domicilio"/>
+						<input type="text" class="caja" id="domicilio" placeholder="Introduce Domicilio" name="Domicilio"/>
 					</p>
 
 					<p>
 						<label for="provincia">
 					<strong>Provincia</strong>
 						</label>
-					</p>
-					<p>
-						<select id="provincia" name="Provincia"/>
+						<select id="provincia" class="caja" name="Provincia"/>
 							<option>Barcelona</option>
 							<option>Cantabria</option>
 							<option>Madrid</option>
@@ -71,9 +108,7 @@
 						<label for="Ciudad">
 						<strong>Ciudad</strong>
 						</label>
-					</p>
-					<p>
-						<select multiple="multiple" id="pais" name="Ciudad"/>
+						<select multiple="multiple" class="caja" id="pais" name="Ciudad"/>
 						<optgroup label ="Ciudad">
 							<option>Santander</option>
 							<option>Cuenca</option>
@@ -89,13 +124,13 @@
 						<label for="codigo postal">
 						<strong>Código Postal</strong>
 						</label>
-						<input type="text" id="codigo postal" name="Código Postal"/>
+						<input type="text" class="caja" id="codigo postal" placeholder="Introduce Código Postal" name="Código Postal"/>
 					</p>
-					<p>
+					<p class="abajo">
 						<label for="telefono">
 						<strong>Teléfono</strong>
 						</label>
-						<input type="text" id="telefono" name="Teléfono"/>
+						<input type="text" class="caja" id="telefono" placeholder="Introduce Teléfono" name="Teléfono"/>
 					</p>
 
 
