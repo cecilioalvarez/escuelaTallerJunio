@@ -178,7 +178,7 @@ it("test 3 arrays y que sumen 2 de ellas", function() {
     var lista3 = [];
     for (var i = 0; i < lista.length; i++) {
 
-        lista3.push(lista[i]+lista2[i]);
+    lista3.push(lista[i]+lista2[i]);
         //console.log(lista2);
     }
     expect(lista3).toEqual([2, 4, 6, 8, 10]);//EQUAL = MAS COMPLEJO
