@@ -1,0 +1,24 @@
+Emmet
+Emmet es un plugin que es necesario instalar, sea cual sea su editor de texto favorito.
+ Las principales características de Emmet, como el uso de abreviaturas para las etiquetas,
+ te permiten trabajar con rapidez al escribir sintaxis de HTML, CSS, Sass / SCSS y LESS.
+ Por ejemplo, en HTML, escribir  p>a.mylink y luego pulsar la tecla TAB para obtener una 
+etiqueta HTML completa <p><a href=”” class=”mylink”></a></p>.
+
+---------------------------------
+
+Color Picker es un paquete para Atom que te permite seleccionar colores de manera sencilla.
+ Sólo debes pinchar el botón derecho del ratón y elegir “Color Picker” una vez que hayas instalado 
+el paquete al editor Atom. También puedes acceder a su herramienta para seleccionar colores presionando CTRL+SHIFT+C.
+
+Para que Color Picker funcione correctamente debes posicionar el cursor sobre el código de color
+ o valores en HEX, HEXa, RGB, RGBa, HSL, HSLa, HSV, HSVa, VEC3 y VEC4.
+
+Con Color Picker no sólo puedes seleccionar colores de manera más sencilla, sino que te permite 
+convertir un mismo color a otro formato. Por ejemplo, puedes convertir de HEX a RGB.
+----------------------------------
+
+CSS Comb, como su nombre indica, es un optimizador de código para CSS. Te permite tener una hoja de
+ estilo más ordenada. Puedes establecer reglas predeterminadas en base a Yandex y Zen e incluso puedes 
+configurarlo para crear tus propias reglas de ordenación. Una vez instalado, puedes realizar la clasificación
+ presionando la combinación CTRL+ALT+C
